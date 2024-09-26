@@ -40,6 +40,12 @@ jobs:
       with:
         name: webapp
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+# Add Azure Login step here
+    - name: Azure Login
+      uses: Azure/login@v2.2.0
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
     - name: Deploy to Azure WebApp
       uses: azure/webapps-deploy@v2
       with:
