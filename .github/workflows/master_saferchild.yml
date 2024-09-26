@@ -53,4 +53,4 @@ jobs:
           app-name: 'SaferChild'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_558C3698D9964D1892145CE32E129387 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9416E0CB0E6B4FC69D5D9F1959876BEB }}
